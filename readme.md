@@ -9,3 +9,7 @@ npm run demo
 ## Run the programm with your own file with the extension:
 
 npm run counter /path/to/file.txt
+
+## Run Jest tests:
+
+npm run test
