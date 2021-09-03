@@ -25,7 +25,7 @@ function wordCounter(filePath: Path): void {
     }
 
     const content: TextContent = fs.readFileSync(normalizedPath, 'utf-8');
-    const wordsList: WordsList = content.match(/[a-zäöüßõ']+/gi);
+    const wordsList: WordsList = content.match(/[a-zÀ-ÿ]+['-]?[a-zÀ-ÿ]*/gi);
     if (!wordsList) {
         console.error(errors.noWords);
         return;
